@@ -1,0 +1,369 @@
+/* CSS Document */
+body {
+ 
+ background-color: white;
+}
+
+#main {
+  width: 100vw;
+  height: 20vh;
+  
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: row; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: row;
+}
+
+#main div {
+  width: 25vw;
+  height: 20vh;
+
+}
+
+
+#textp {
+  width: 60vw;
+
+}
+
+.footer{
+  background:#662e8c;
+  margin-top:10px;
+  height:10px;
+  color:#212F3C;
+  /*position:relative;*/
+  line-height:180%;
+  padding:0 10px;
+}
+
+#btnsA, #btnsB
+{
+  z-index: 2
+}
+
+#ZonaArticulos{
+  display: flex; 
+  flex-direction: column;
+  position:absolute;
+  top: 28%;
+  
+  right: 1%;
+  width: 20%;
+  height: 75%; /*230px*/
+
+  
+}
+
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
+
+#ZonaArticulos2{
+  display: flex; 
+  flex-direction: column;
+  position:absolute;
+  top: 28%;
+  
+  right: 1%;
+  width: 20%;
+  height: 75%; /*230px*/
+
+  
+}
+
+.Articulos, .Articuloss{
+  cursor: pointer;
+  /*position: absolute;*/
+  /*right: 1%;*/
+  width: 100%;
+  height: 30%; /*230px*/
+  border: solid;
+  margin-bottom: 4%;
+  z-index: 5;
+
+}
+
+
+
+div.Articulos img{
+  
+  z-index: 7;
+  width: 100%; 
+  height: 100%;
+
+}
+div.Articulos span{
+  position: absolute;
+  z-index: 9;
+
+}
+div.Articulos span a{
+  color: #fff;
+
+}
+
+.Articulos .tooltiptext{
+  visibility: hidden;
+  width: 99%;
+  height: 30%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  text-orientation: 
+  border-radius: 6px;
+  padding: 5px 0;
+  opacity: .7;
+  z-index: 8;
+
+}
+
+.Articulos:hover .tooltiptext{
+  visibility: visible;
+  z-index: 8;
+
+}
+
+#Articulo1{
+  /*top: 0px;*/
+
+
+}
+
+
+#Articulo2{
+  /*top: 398px;*/
+}
+
+#Articulo3{
+  /*top: 648px;*/
+}
+
+.LOGO {
+  position: absolute;
+  right: 100px;
+  top: 56px;
+  width: 300px;
+  height: 100px;
+  z-index: 2
+}
+.CABECERA {
+  position: relative;
+  text-align: center;
+  /*background-color: white;*/
+  height: 140px;
+  top: 0px;
+  z-index: 1
+
+}
+
+#Empresas
+{
+  font-size: 20;
+  position: absolute;
+  top: 40px;
+
+
+}
+
+.TITLE{
+  position: relative;
+  width: 80vw;
+  
+  text-align: left;
+  /*padding: 50px*/
+
+
+}
+
+.TITLE .h2Title{
+  position: absolute;
+
+}
+
+.TITLE .Img{
+position: relative; 
+left: 120px;
+  
+
+}
+
+
+#TITLE font{
+  text-align: left;
+
+
+}
+
+#TITULO{
+  position: relative;
+  top: -28vh;/*-130px;*/
+
+}
+
+#DOTS{
+  position: relative;
+  top: -21vh;/*-100px;*/
+  width: 20%;
+
+}
+
+.fuente {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	
+}
+
+.colores {
+	color: mediumpurple;
+	
+}
+
+.separacion{
+	margin-right: 30px;
+}
+
+center div div{
+
+}
+
+.MainDivsTitle{
+  height: 50vh;
+  color: red;
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  top: 24.5%;/*top: -21vh;-100px;*/
+  max-width: 60%;
+  left: 18%;
+  position: absolute;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;/*#f2f2f2;*/
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: -30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
